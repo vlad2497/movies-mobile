@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "movies",
-    "slug": "movies",
+    "name": "Кино",
+    "slug": "movies-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "movies-app",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -13,17 +14,19 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vlad.movies",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.vlad.movies",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
